@@ -17,3 +17,8 @@ project/plugins/project/
 
 .idea/
 .idea_modules/
+
+# Eclipse
+.classpath
+.project
+.cache
