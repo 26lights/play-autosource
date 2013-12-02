@@ -95,7 +95,7 @@ abstract class AutoSourceRouterContoller[Id](implicit idBindable: PathBindable[I
           case ("PUT",    Partial(id)) => withId(id, updatePartial)
           case ("PATCH",  Partial(id)) => withId(id, updatePartial)
           case ("PUT",    Id(id))      => withId(id, update)
-          case ("PATCH",  Id(id))      => withId(id, update)
+          case ("PATCH",  Id(id))      => withId(id, updatePartial)
 
           case ("POST",   Batch())     => batchInsert
           case ("POST",   Find())      => find
